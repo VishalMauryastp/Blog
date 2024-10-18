@@ -1,0 +1,21 @@
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "description": "## What is CodeIgniter?",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "build": "npx tailwindcss -i ./public/css/tailwind.css -o ./public/css/style.css --watch",
+      "start": "npm run build"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.4.14"
+  }
+}
