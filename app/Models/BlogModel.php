@@ -6,7 +6,28 @@ use CodeIgniter\Model;
 
 class BlogModel extends Model
 {
-    protected $table = 'blogs'; 
+    // The table this model will interact with
+    protected $table = 'blogs';
+
+    // The primary key field of the table
     protected $primaryKey = 'id';
-    protected $allowedFields = ['title', 'content'];
+
+    // The allowed fields for insert and update operations
+    protected $allowedFields = [
+        'title', 
+        'slug', 
+        'content', 
+        'image', 
+        'image_alt', 
+        'meta_title', 
+        'meta_keyword', 
+        'meta_description', 
+        'isEnable'
+    ];
+
+    // Enable timestamps (created_at, updated_at)
+    protected $useTimestamps = true;
+
+  
+   
 }
